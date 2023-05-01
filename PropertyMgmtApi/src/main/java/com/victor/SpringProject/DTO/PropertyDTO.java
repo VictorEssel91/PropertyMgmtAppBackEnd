@@ -1,19 +1,14 @@
 package com.victor.SpringProject.DTO;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-
 public class PropertyDTO {
 
     private int propertyId;
     private String propertyAddress;
     private String propertyRentedStatus;
-    private int propertyContactNumber;
+    private String propertyContactNumber;
 
 
-    public PropertyDTO(int propertyId, String propertyAddress, String propertyRentedStatus, int propertyContactNumber) {
+    public PropertyDTO(int propertyId, String propertyAddress, String propertyRentedStatus, String propertyContactNumber) {
         this.propertyId = propertyId;
         this.propertyAddress = propertyAddress;
         this.propertyRentedStatus = propertyRentedStatus;
@@ -47,11 +42,11 @@ public class PropertyDTO {
         this.propertyRentedStatus = propertyRentedStatus;
     }
 
-    public int getPropertyContactNumber() {
+    public String getPropertyContactNumber() {
         return propertyContactNumber;
     }
 
-    public void setPropertyContactNumber(int propertyContactNumber) {
+    public void setPropertyContactNumber(String propertyContactNumber) {
         this.propertyContactNumber = propertyContactNumber;
     }
 

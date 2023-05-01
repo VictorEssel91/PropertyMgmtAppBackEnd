@@ -19,10 +19,10 @@ public class Property {
     private String propertyRentedStatus;
 
     @Column(name = "property_contactNumber", length = 50)
-    private int propertyContactNumber;
+    private String propertyContactNumber;
 
 
-    public Property(int propertyId, String propertyAddress, String propertyRentedStatus, int propertyContactNumber) {
+    public Property(int propertyId, String propertyAddress, String propertyRentedStatus, String propertyContactNumber) {
         this.propertyId = propertyId;
         this.propertyAddress = propertyAddress;
         this.propertyRentedStatus = propertyRentedStatus;
@@ -30,7 +30,7 @@ public class Property {
     }
 
 
-    public Property(String propertyAddress, String propertyRentedStatus, int propertyContactNumber) {
+    public Property(String propertyAddress, String propertyRentedStatus, String propertyContactNumber) {
         this.propertyId = propertyId;
         this.propertyAddress = propertyAddress;
         this.propertyRentedStatus = propertyRentedStatus;
@@ -68,11 +68,11 @@ public class Property {
         this.propertyRentedStatus = propertyRentedStatus;
     }
 
-    public int getPropertyContactNumber() {
+    public String getPropertyContactNumber() {
         return propertyContactNumber;
     }
 
-    public void setPropertyContactNumber(int propertyContactNumber) {
+    public void setPropertyContactNumber(String propertyContactNumber) {
         this.propertyContactNumber = propertyContactNumber;
     }
 
