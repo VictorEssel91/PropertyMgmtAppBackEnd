@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 @Entity
 @Table(name = "property")
 
-public class property {
+public class Property {
 
     @Id
     @Column(name = "property_id", length = 50)
@@ -22,7 +22,7 @@ public class property {
     private int propertyContactNumber;
 
 
-    public property(int propertyId, String propertyAddress, String propertyRentedStatus, int propertyContactNumber) {
+    public Property(int propertyId, String propertyAddress, String propertyRentedStatus, int propertyContactNumber) {
         this.propertyId = propertyId;
         this.propertyAddress = propertyAddress;
         this.propertyRentedStatus = propertyRentedStatus;
@@ -30,7 +30,7 @@ public class property {
     }
 
 
-    public property() {
+    public Property() {
     }
 
     public int getPropertyId() {
@@ -61,7 +61,7 @@ public class property {
         return propertyContactNumber;
     }
 
-    public void setPropertyContactNumber(int propertyContactNumber) {
+    public void setPropertyContactNumber(int propertyContactNumber) {0
         this.propertyContactNumber = propertyContactNumber;
     }
 
