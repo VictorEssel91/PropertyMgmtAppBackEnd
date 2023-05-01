@@ -30,6 +30,17 @@ public class Property {
     }
 
 
+    public Property(String propertyAddress, String propertyRentedStatus, int propertyContactNumber) {
+        this.propertyId = propertyId;
+        this.propertyAddress = propertyAddress;
+        this.propertyRentedStatus = propertyRentedStatus;
+        this.propertyContactNumber = propertyContactNumber;
+    }
+
+
+
+
+
     public Property() {
     }
 
@@ -61,7 +72,7 @@ public class Property {
         return propertyContactNumber;
     }
 
-    public void setPropertyContactNumber(int propertyContactNumber) {0
+    public void setPropertyContactNumber(int propertyContactNumber) {
         this.propertyContactNumber = propertyContactNumber;
     }
 
