@@ -5,9 +5,9 @@ public class PropertySaveDTO {
 
     private String propertyAddress;
     private String propertyRentedStatus;
-    private int propertyContactNumber;
+    private String propertyContactNumber;
 
-    public PropertySaveDTO(String propertyAddress, String propertyRentedStatus, int propertyContactNumber) {
+    public PropertySaveDTO(String propertyAddress, String propertyRentedStatus, String propertyContactNumber) {
         this.propertyAddress = propertyAddress;
         this.propertyRentedStatus = propertyRentedStatus;
         this.propertyContactNumber = propertyContactNumber;
@@ -32,11 +32,11 @@ public class PropertySaveDTO {
         this.propertyRentedStatus = propertyRentedStatus;
     }
 
-    public int getPropertyContactNumber() {
+    public String getPropertyContactNumber() {
         return propertyContactNumber;
     }
 
-    public void setPropertyContactNumber(int propertyContactNumber) {
+    public void setPropertyContactNumber(String propertyContactNumber) {
         this.propertyContactNumber = propertyContactNumber;
     }
 
