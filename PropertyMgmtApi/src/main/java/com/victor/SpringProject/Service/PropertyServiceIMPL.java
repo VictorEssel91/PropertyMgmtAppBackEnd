@@ -44,8 +44,9 @@ public class PropertyServiceIMPL implements PropertyService {
 
                     p.getPropertyId(),
                     p.getPropertyAddress(),
-                    p.getPropertyContactNumber(),
-                    p.getPropertyRentedStatus()
+                    p.getPropertyRentedStatus(),
+                    p.getPropertyContactNumber()
+
 
             );
 
@@ -63,8 +64,9 @@ public class PropertyServiceIMPL implements PropertyService {
             Property property = propertyRepo.getById(propertyUpdateDTO.getPropertyId());
 
             property.setPropertyAddress(propertyUpdateDTO.getPropertyAddress());
-            property.setPropertyContactNumber(propertyUpdateDTO.getPropertyContactNumber());
             property.setPropertyRentedStatus(propertyUpdateDTO.getPropertyRentedStatus());
+            property.setPropertyContactNumber(propertyUpdateDTO.getPropertyContactNumber());
+
             
             propertyRepo.save(property);
 
